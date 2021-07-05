@@ -1,0 +1,12 @@
+This is a placeholder file. 
+
+This directory is used for databases.
+
+Have a cake.
+
+   $$  $$  $$
+ __||__||__||__
+| * * * * * * *|
+|* * * * * * * |
+| * * * * * * *|
+|______________|
