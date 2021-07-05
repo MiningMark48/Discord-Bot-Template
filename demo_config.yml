@@ -1,0 +1,25 @@
+bot:
+  token: token                                                          # The token linked to a Discord app bot account
+  key: ;                                                                # The key that is placed at the beginning of every command to trigger it
+  owners:                                                               # List of user IDs that have access to owner-only commands
+    - 12341234123412
+
+logging:                                                                # Settings for logging. These settings will work and do not *need* to be changed.
+  common: &log_common                                                   # Logging: Common (anchored) settings for logging between file and console. These can be defined seperately.
+    level: info                                                         # Logging: Log level (Valid levels: debug, info, warning, error, critical)
+    format: "[{asctime}] [{levelname:<8}] {name}: {message}"            # Logging: Log message format
+    date_time_format: "%Y-%m-%d %I:%M %p"                               # Logging: Date/Time format
+    style: "{"                                                          # Logging: Log message format style
+  file:                                                                 # Log file settings
+    file_location: "logs/"                                              # Log file: File location
+    encoding: utf-8                                                     # Log file: Encoding type
+    write_mode: a                                                       # Log file: File write mode (Valid modes: a (append), w (write-over))
+    max_mebibytes: 32                                                   # Log file: Max mebibytes of data per log file backup
+    backup_count: 5                                                     # Log file: Number of backups for a log file
+    <<: *log_common                                                     # Logging: Use anchored settings from 'common' section above (Settings can be defined seperately)
+  console:                                                              # Log console settings
+    <<: *log_common                                                     # Logging: Use anchored settings from 'common' section above (Settings can be defined seperately)
+    colored: false                                                      # Log console: If true, the console will apply colors to different log levels (Only works with select terminals)
+
+misc:
+  create_commands_list: true                                            # Should a commands list be generated on bot run?

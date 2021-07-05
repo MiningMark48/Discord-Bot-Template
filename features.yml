@@ -1,0 +1,9 @@
+# This file is for enabling and disabling features, 
+# such as extensions and commands.
+
+extensions:
+  - extension: demo
+
+commands:
+  - command: test
+    enabled: false
