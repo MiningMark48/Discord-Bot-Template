@@ -4,8 +4,12 @@ Discord Bot Template is a Github template beneficial in creating a Discord bot u
 
 This template is based on [Tidal Bot](https://github.com/MiningMark48/Tidal-Bot).
 
+- [Discord Bot Template](#discord-bot-template)
+	- [Some things to note](#some-things-to-note)
+	- [What this template offers](#what-this-template-offers)
+
 ## Some things to note
-- This is a bot template, not a tutorial
+- This is a bot template, not a [tutorial](https://discordpy.readthedocs.io/en/latest/index.html#getting-started)
   - This is not for beginners
   - This will not teach you how to code a bot
 - This template is a work-in-progress 
@@ -20,4 +24,3 @@ This template is based on [Tidal Bot](https://github.com/MiningMark48/Tidal-Bot)
 - Command list generator, flavored with [Github Markdown](https://guides.github.com/features/mastering-markdown/)
 - Database handling, using [SQLAlchemy](https://pypi.org/project/sqlalchemy/)
 - Data backup generation, with compression
-
